@@ -1,0 +1,292 @@
+/*Predefined fant for the whole page*/
+html{font-family:Arial, Helvetica, sans-serif;}
+
+body{
+    padding-top: 0px;
+    margin: 0;
+    background-image: url(../images/ReesesPieces.jpg);
+    background-size:cover;
+    
+}
+
+/*Header */
+header {
+  background-image: linear-gradient(to right, #E6AE49, #DD6F68);
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 0 30px;
+}
+
+/* Logo container */
+header div {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+}
+
+/* Logo image */
+header div a img {
+  height: 60px;
+  width: auto;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.2));
+}
+
+header div a img:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation menu */
+.nav-wraper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-bar{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+ 
+.nav-list {
+
+  justify-content: center;
+  flex-grow: 1;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 60px;
+
+}
+
+
+/* Menu items */
+.nav-item {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  padding: 14px 20 px;
+  /*position: relative;*/
+  
+}
+
+/* Link styling */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  justify-content: space-evenly;
+  padding: 8px 0;
+  position: relative;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Underline effect on hover */
+header nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+}
+/* Link states */
+header a:link {
+  color: white;
+}
+
+header a:hover, 
+header a:active, 
+header a:focus, 
+header a:visited {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px){
+  header {
+      padding: 0 15px;
+  }
+
+  header nav ul {
+      gap: 20px;
+  }
+
+  header nav ul li {
+      font-size: 16px;
+  }
+
+  header div a img {
+    height: 50px;
+}
+}
+
+  /*About*/
+  #about {
+    background-color:rgb(255,255,255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.about-item {
+    vertical-align:  middle;  
+    padding: 3vw;
+    padding-left:5vw;
+}
+
+.description {
+    background-color: #FDF8F3;
+    padding: 5vw;
+}
+.description h1 {
+    font-size: 2em;
+    padding: 1.5em 0 0 1em;
+}
+.description p {
+    padding: 2em;
+    line-height: 1.5em;
+}
+.bigcup {
+    padding-bottom: 1vw;
+    background-color: #fe5200;
+    text-align: center;
+    
+}
+
+/* animation when you hover */
+.bigcup img:hover {
+    animation: wiggle 2s linear infinite;
+    cursor: pointer;
+}
+
+  /*Contact*/
+  #contact {
+    background-image: linear-gradient(to right, #E6AE49, #DD6F68);
+    background-color: #E6AE49;
+    padding:3vw 0;
+    position: relative;
+  }
+  
+  #contact h1{
+    text-align: center;
+    padding:0.5em;
+    color: white;
+    letter-spacing: 0.05em;
+  }
+
+  #contact p {
+    text-align: center;
+    margin:0 auto 2em auto;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+  
+  }
+
+  .form-area {
+    display: flex;
+    justify-content: center;
+    margin: 0 7vw;
+    
+  }
+
+  input[type=text], [type=email],select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; 
+  }
+
+  input[type=submit] {
+    background-color: #3C131B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button {
+    text-align: center;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #60212d;
+  }
+
+  .form-container {
+    border-radius: 5px;
+    background-color: #FDF8F3;
+    padding: 20px;
+    box-shadow: 0.5em 0.5em 0.5em grey;
+  }
+
+
+.multi-bg-example {
+  width: 100%;
+  height:100%;
+  background-image: url(/img/baa7a3d2ac791eac907b16ac455a3696.jpg),
+    linear-gradient(to right, rgb(248, 153, 46), rgba(216, 187, 54, 0));
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    bottom right,
+    right;
+  position: relative;
+}
+
+/*Footer*/
+.footer{
+  padding: 0 5vw;
+  background-image: linear-gradient(to left, yellow, orange);
+  position: relative;
+}
+
+.comapany-logo{
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.company-info {
+  margin: 0;
+  background-color: rgba(255,255,255,0.5);
+  padding: 2vw 15vw 2vw 5vw;
+  line-height: 2em;
+  color:#3C131B;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+
+#copyright{
+  text-align: center;
+  padding: 4px;
+  bottom: 0;
+}
+
